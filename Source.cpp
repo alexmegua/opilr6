@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	int x, a, b, c;
+	int x, a, b, c, d;
 	double f;
 	cout << "Enter x: ";
 	cin >> x;
@@ -13,13 +13,13 @@ int main()
 	cin >> b;
 	cout << "Enter c: ";
 	cin >> c;
+	cout << "Enter d: ";
+	cin >> d;
 	if (x < 0 && b != 0)
 	{
-		f = a * pow(x, 2) + b;
+		f = a * pow(x, 2) + b * d;
+		cout << f;
 	}
-	else 
-		if (x > 0 && b == 0) f = (x - a) / (x - c);
-		else if (c != 0) f = x / c;
-	else cout << "Error";
-	cout << f;
+	else
+		cout << "Error";
 }
